@@ -1,0 +1,4 @@
+/home/la-shallot/418-final-proj/build/CMakeFiles/Parellel_OpFlow_main.dir
+/home/la-shallot/418-final-proj/build/CMakeFiles/test_openmp.dir
+/home/la-shallot/418-final-proj/build/CMakeFiles/edit_cache.dir
+/home/la-shallot/418-final-proj/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,960 @@
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a3969/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a3969.dir/build.make CMakeFiles/cmTC_a3969.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a3969.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_a3969.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_a3969.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_a3969.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_a3969.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_a3969.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a3969.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_a3969.dir/build.make:79: CMakeFiles/cmTC_a3969.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a3969/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b5e44/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b5e44.dir/build.make CMakeFiles/cmTC_b5e44.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b5e44.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libiomp5 -v -MD -MT CMakeFiles/cmTC_b5e44.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_b5e44.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_b5e44.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_b5e44.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_b5e44.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b5e44.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_b5e44.dir/build.make:79: CMakeFiles/cmTC_b5e44.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b5e44/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12df3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12df3.dir/build.make CMakeFiles/cmTC_12df3.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_12df3.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp -v -MD -MT CMakeFiles/cmTC_12df3.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_12df3.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_12df3.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_12df3.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_12df3.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_12df3.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_12df3.dir/build.make:79: CMakeFiles/cmTC_12df3.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_12df3/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5cadc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5cadc.dir/build.make CMakeFiles/cmTC_5cadc.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5cadc.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -Xclang -fopenmp -v -MD -MT CMakeFiles/cmTC_5cadc.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_5cadc.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_5cadc.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_5cadc.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_5cadc.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fopenmp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5cadc.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_5cadc.dir/build.make:79: CMakeFiles/cmTC_5cadc.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5cadc/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cc1f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc1f5.dir/build.make CMakeFiles/cmTC_cc1f5.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cc1f5.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_cc1f5.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_cc1f5.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_cc1f5.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_cc1f5.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_cc1f5.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cc1f5.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_cc1f5.dir/build.make:79: CMakeFiles/cmTC_cc1f5.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cc1f5/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2eaf5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2eaf5.dir/build.make CMakeFiles/cmTC_2eaf5.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2eaf5.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libiomp5 -v -MD -MT CMakeFiles/cmTC_2eaf5.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_2eaf5.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_2eaf5.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_2eaf5.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_2eaf5.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2eaf5.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_2eaf5.dir/build.make:79: CMakeFiles/cmTC_2eaf5.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2eaf5/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_59ade/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59ade.dir/build.make CMakeFiles/cmTC_59ade.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_59ade.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp -v -MD -MT CMakeFiles/cmTC_59ade.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_59ade.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_59ade.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_59ade.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_59ade.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_59ade.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_59ade.dir/build.make:79: CMakeFiles/cmTC_59ade.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_59ade/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_80db8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_80db8.dir/build.make CMakeFiles/cmTC_80db8.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_80db8.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -Xclang -fopenmp -v -MD -MT CMakeFiles/cmTC_80db8.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_80db8.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_80db8.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_80db8.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_80db8.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fopenmp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_80db8.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_80db8.dir/build.make:79: CMakeFiles/cmTC_80db8.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_80db8/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d7eb2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d7eb2.dir/build.make CMakeFiles/cmTC_d7eb2.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d7eb2.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_d7eb2.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_d7eb2.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_d7eb2.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_d7eb2.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_d7eb2.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d7eb2.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_d7eb2.dir/build.make:79: CMakeFiles/cmTC_d7eb2.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d7eb2/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aeaec/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aeaec.dir/build.make CMakeFiles/cmTC_aeaec.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aeaec.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libiomp5 -v -MD -MT CMakeFiles/cmTC_aeaec.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_aeaec.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_aeaec.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_aeaec.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_aeaec.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_aeaec.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_aeaec.dir/build.make:79: CMakeFiles/cmTC_aeaec.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_aeaec/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_97e54/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_97e54.dir/build.make CMakeFiles/cmTC_97e54.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_97e54.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp -v -MD -MT CMakeFiles/cmTC_97e54.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_97e54.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_97e54.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_97e54.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_97e54.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_97e54.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_97e54.dir/build.make:79: CMakeFiles/cmTC_97e54.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_97e54/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_62b7f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_62b7f.dir/build.make CMakeFiles/cmTC_62b7f.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_62b7f.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -Xclang -fopenmp -v -MD -MT CMakeFiles/cmTC_62b7f.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_62b7f.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_62b7f.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_62b7f.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_62b7f.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fopenmp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_62b7f.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_62b7f.dir/build.make:79: CMakeFiles/cmTC_62b7f.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_62b7f/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1db9b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1db9b.dir/build.make CMakeFiles/cmTC_1db9b.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1db9b.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_1db9b.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_1db9b.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_1db9b.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_1db9b.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_1db9b.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_1db9b.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_1db9b.dir/build.make:79: CMakeFiles/cmTC_1db9b.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1db9b/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_17300/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_17300.dir/build.make CMakeFiles/cmTC_17300.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_17300.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libiomp5 -v -MD -MT CMakeFiles/cmTC_17300.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_17300.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_17300.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_17300.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_17300.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_17300.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_17300.dir/build.make:79: CMakeFiles/cmTC_17300.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_17300/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7baa5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7baa5.dir/build.make CMakeFiles/cmTC_7baa5.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7baa5.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp -v -MD -MT CMakeFiles/cmTC_7baa5.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_7baa5.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_7baa5.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_7baa5.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_7baa5.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7baa5.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_7baa5.dir/build.make:79: CMakeFiles/cmTC_7baa5.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7baa5/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_622d3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_622d3.dir/build.make CMakeFiles/cmTC_622d3.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_622d3.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -Xclang -fopenmp -v -MD -MT CMakeFiles/cmTC_622d3.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_622d3.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_622d3.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_622d3.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_622d3.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fopenmp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_622d3.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_622d3.dir/build.make:79: CMakeFiles/cmTC_622d3.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_622d3/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b895a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b895a.dir/build.make CMakeFiles/cmTC_b895a.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b895a.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_b895a.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_b895a.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_b895a.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_b895a.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_b895a.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b895a.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_b895a.dir/build.make:79: CMakeFiles/cmTC_b895a.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b895a/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_784a6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_784a6.dir/build.make CMakeFiles/cmTC_784a6.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_784a6.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libiomp5 -v -MD -MT CMakeFiles/cmTC_784a6.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_784a6.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_784a6.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_784a6.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_784a6.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_784a6.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_784a6.dir/build.make:79: CMakeFiles/cmTC_784a6.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_784a6/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2c324/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2c324.dir/build.make CMakeFiles/cmTC_2c324.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2c324.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp -v -MD -MT CMakeFiles/cmTC_2c324.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_2c324.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_2c324.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_2c324.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_2c324.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2c324.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_2c324.dir/build.make:79: CMakeFiles/cmTC_2c324.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2c324/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cf48f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cf48f.dir/build.make CMakeFiles/cmTC_cf48f.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cf48f.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -Xclang -fopenmp -v -MD -MT CMakeFiles/cmTC_cf48f.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_cf48f.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_cf48f.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_cf48f.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_cf48f.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fopenmp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cf48f.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_cf48f.dir/build.make:79: CMakeFiles/cmTC_cf48f.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cf48f/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_48360/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_48360.dir/build.make CMakeFiles/cmTC_48360.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_48360.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_48360.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_48360.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_48360.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_48360.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_48360.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_48360.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_48360.dir/build.make:79: CMakeFiles/cmTC_48360.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_48360/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c3525/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c3525.dir/build.make CMakeFiles/cmTC_c3525.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3525.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp=libiomp5 -v -MD -MT CMakeFiles/cmTC_c3525.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_c3525.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_c3525.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_c3525.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_c3525.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c3525.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_c3525.dir/build.make:79: CMakeFiles/cmTC_c3525.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c3525/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dcc72/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dcc72.dir/build.make CMakeFiles/cmTC_dcc72.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dcc72.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp -v -MD -MT CMakeFiles/cmTC_dcc72.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_dcc72.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_dcc72.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_dcc72.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_dcc72.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dcc72.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_dcc72.dir/build.make:79: CMakeFiles/cmTC_dcc72.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_dcc72/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_535e8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_535e8.dir/build.make CMakeFiles/cmTC_535e8.dir/build
+gmake[1]: Entering directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_535e8.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -Xclang -fopenmp -v -MD -MT CMakeFiles/cmTC_535e8.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_535e8.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_535e8.dir/OpenMPTryFlag.cpp.o -c /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_535e8.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_535e8.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fopenmp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_535e8.dir/OpenMPTryFlag.cpp.o -x c++ /home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+/home/la-shallot/418-final-proj/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_535e8.dir/build.make:79: CMakeFiles/cmTC_535e8.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/la-shallot/418-final-proj/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_535e8/fast] Error 2
+
+
+
