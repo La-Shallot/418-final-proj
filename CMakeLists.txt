@@ -6,6 +6,7 @@ set(CFLAGS
     -m64
     -O3
     -fopenmp=libomp
+    # -g3
 )
 
 add_compile_options(${CFLAGS})

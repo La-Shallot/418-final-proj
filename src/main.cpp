@@ -7,6 +7,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <deque>
+#include <omp.h>
     
 using namespace cv;
 using namespace std;
@@ -31,14 +32,22 @@ namespace
             printf("This is still under construction. - areas - (%d,%d), thres - %d", xarea, yarea, thres);
 
         int dimx = img.cols, dimy = img.rows;
+        // omp_lock_t vec_lock;
+        // omp_init_lock(&vec_lock);
 
         int count = 0;
-        for (int startx = 0; (startx + xarea) < dimx; startx += xarea)
+        #pragma omp parallel for schedule(static, 16)
+        for (int startx_dummy = 0; (startx_dummy) < dimx/xarea - 1; startx_dummy += 1)
             for (int starty = 0; (starty + yarea) < dimy; starty += yarea)
+        // for (int starty_dummy = 0; (starty_dummy) < dimy/yarea - 1; starty_dummy += 1)
+            // for (int startx = 0; (startx + xarea) < dimx; startx += xarea)
             {
+                int startx = startx_dummy * xarea;
+                // int starty = starty_dummy * yarea;
                 count++;
-                if (verbose)
-                    printf("\n Area %d - Currenty looking at area (%d-%d,%d-%d)\n", count, startx, startx + xarea, starty, starty + yarea);
+                if (verbose){
+                    // printf("\n Area %d - Currenty looking at area (%d-%d,%d-%d)\n", count, startx, startx + xarea, starty, starty + yarea);
+                }
                 Mat curarea = img(Range(starty, min(starty + yarea, dimy)), Range(startx, min(dimx, startx + xarea)));
                 double results[2] = {0, 0};
                 for (int dir = 0; dir < 4; dir++)
@@ -72,8 +81,9 @@ namespace
 
                     if (newarea.cols != curarea.cols || newarea.rows != curarea.rows)
                     {
-                        if (verbose)
-                            printf("Skipping due to dimensional or similarity issues");
+                        if (verbose){
+                            // printf("Skipping due to dimensional or similarity issues");
+                        }
                         continue;
                     }
                     Mat diff = abs(curarea - newarea);
@@ -82,62 +92,113 @@ namespace
                 results[0] /= 2;
                 results[1] /= 2;
                 if (verbose)
-                    printf("Scores obtained: %f, %f\n", results[0], results[1]);
+                    // printf("Scores obtained: %f, %f\n", results[0], results[1]);
 
                 // thresholding
                 if (results[0] >= thres && results[1] >= thres)
-                {
+                {   
+                    //lock
+                    // omp_set_lock(&vec_lock);
+                    // printf("Pushing corner %d,%d\n", startx, starty);
+                    #pragma omp critical
                     corners.push_back(Point(startx, starty));
-                    rectangle(outimg, Point(startx, starty), Point(startx + xarea, starty + yarea), Scalar(0), 2);
+                    // #pragma omp critical
+                    // rectangle(outimg, Point(startx, starty), Point(startx + xarea, starty + yarea), Scalar(0), 2);
+                    // omp_unset_lock(&vec_lock);
                 }
 
-                log << startx << "," << starty << "," << results[0] << "," << results[1] << "\n";
+                // log << startx << "," << starty << "," << results[0] << "," << results[1] << "\n";
             }
         log.close();
 
         if (verbose)
         {
-            string winCorImg = "Corners found";
-            namedWindow(winCorImg, WINDOW_AUTOSIZE);
-            imshow(winCorImg, outimg);
-            waitKey(0);
+            // string winCorImg = "Corners found";
+            // namedWindow(winCorImg, WINDOW_AUTOSIZE);
+            // imshow(winCorImg, outimg);
+            // waitKey(0);
         }
+
+        printf("\nFound %d corners", corners.size());
+
+        // omp_destroy_lock(&vec_lock);
+
+        return corners;
+    }
+
+    deque<Point> findCorners(vector<vector<float>> img, int xarea, int yarea, int thres, bool verbose = true)
+    {
+        deque<Point> corners;
+
+        // Using Harris Corner Detection
+
+        if (verbose)
+            printf("\nHarris Corner Detection - areas - (%d,%d), thres - %d", xarea, yarea, thres);
+
+        // int dimx = img.cols, dimy = img.rows;
+        int dimx = img[0].size(), dimy = img.size();
+        // omp_lock_t vec_lock;
+        // omp_init_lock(&vec_lock);
+
+        int count = 0;
+
+
+
+        printf("\nFound %d corners", corners.size());
+
+        // omp_destroy_lock(&vec_lock);
 
         return corners;
     }
 
     Mat lucasKanade(Mat imgA, Mat imgB, int xsarea, int ysarea, int xarea, int yarea, deque<Point> corners, bool verbose = true, char filename[] = NULL)
     {
+        // start timer
+        
+
+
         Mat outimg = imgB.clone();
 
         int dimx = imgA.cols, dimy = imgA.rows;
 
         // iterate through each corner to find flow vectors
+        printf("\nFound %d corners", corners.size());
+
+
+
+        #pragma omp parallel for schedule(static, 16)
         for (int i = 0; i < corners.size(); i++)
         {
             Point cur_corner = corners[i];
             Point corner_mid = Point(corners[i].x + (int)(xarea / 2), cur_corner.y + (int)(yarea / 2));
 
             // Draw the corner in the out-image
+            #pragma omp critical
             rectangle(outimg, cur_corner, cur_corner + Point(xarea, yarea), Scalar(0), 2);
 
             // Set range parameters
-            Range sry = Range(max(0, corner_mid.y - (int)(ysarea / 2)), min(dimy, corner_mid.y + (int)(ysarea / 2)));
-            Range srx = Range(max(0, corner_mid.x - (int)(xsarea / 2)), min(dimx, corner_mid.x + (int)(xsarea / 2)));
+            Range sry = Range(max(0, corner_mid.y - (int)(ysarea / 2)), min(dimy-1, corner_mid.y + (int)(ysarea / 2)));
+            Range srx = Range(max(0, corner_mid.x - (int)(xsarea / 2)), min(dimx-1, corner_mid.x + (int)(xsarea / 2)));
 
             // Now that we've found search windows, we can proceed to calculate Ix and Iy for each pixel in the search window
             // Ix
-            Mat Ix = imgA.clone(), Iy = imgA.clone();
 
             int range = 1;
+            // gradient matrix
             double G[2][2] = {0, 0, 0, 0};
+
+            // IxIt and IyIt
             double b[2] = {0, 0};
+
+            // This is a convolution! 
 
             for (int x = srx.start; x <= srx.end; x++)
                 for (int y = sry.start; y <= sry.end; y++)
                 {
                     int px = x - range, nx = x + range;
                     int py = y - range, ny = y + range;
+
+                    // edge conditions
                     if (x == 0)
                         px = x;
                     if (x >= (dimx - 1))
@@ -149,8 +210,6 @@ namespace
 
                     double curIx = ((int)imgA.at<uchar>(y, px) - (int)imgA.at<uchar>(y, nx)) / 2;
                     double curIy = ((int)imgA.at<uchar>(py, x) - (int)imgA.at<uchar>(ny, x)) / 2;
-                    Ix.at<uchar>(y, x) = curIx;
-                    Iy.at<uchar>(y, x) = curIy;
 
                     // calculate G and b
                     G[0][0] += curIx * curIx;
@@ -164,8 +223,6 @@ namespace
                     b[1] += curdI * curIy;
                 }
 
-            // Since it's a royal pain-in-the-ass to download and link matrix libraries to my XCode
-            // for just a single operation, we're just gonna do it by hand
             double detG = (G[0][0] * G[1][1]) - (G[0][1] * G[1][0]);
             double Ginv[2][2] = {0, 0, 0, 0};
             Ginv[0][0] = G[1][1] / detG;
@@ -176,35 +233,46 @@ namespace
             double V[2] = {Ginv[0][0] * b[0] + Ginv[0][1] * b[1], Ginv[1][0] * b[0] + Ginv[1][1] * b[1]};
             if (verbose)
                 printf("\nFor the corner (%d,%d) - v = (%f,%f)", cur_corner.x, cur_corner.y, V[0], V[1]);
+            Scalar color = (0, 255, 0); 
 
-            line(outimg, corner_mid, corner_mid + Point(V[0] * 10, V[1] * 10), Scalar(1), 1);
+            #pragma omp critical
+            line(outimg, corner_mid, corner_mid + Point(V[0] * 10, V[1] * 10), color, 1);
         }
         
-        //string winCorImg = "Corners found";
-        //namedWindow(winCorImg, WINDOW_AUTOSIZE);
-        //imshow(winCorImg, outimg);
-        //waitKey(0);
+
+        // visualization: draw the flow vectors
+
+        // string winCorImg = "Corners found";
+        // namedWindow(winCorImg, WINDOW_NORMAL);
+        // imshow(winCorImg, outimg);
+        // waitKey(0);
+
         //if (filename != NULL)
         //{
         ///    cout << string("\nWriting lkoutput to o") << string(filename);
         //    imwrite(string("o") + string(filename), outimg);
         //}
-        return outimg;
-    }
-
-    Mat hornShunck(Mat imgA, Mat imgB, int scalefactor, int xysize, double smoothnessAssumption)
-    {
-        Mat outimg;
-
-        // To improve performance and smoothness, we need to resize the image
-        resize(imgA, imgA, Size(0, 0), (double)scalefactor, (double)scalefactor);
-        resize(imgB, imgB, Size(0, 0), (double)scalefactor, (double)scalefactor);
-
-        // Once again, we need to calculate the following variables - Ix, Iy and It
-
+        
         return outimg;
     }
     // end of namespace
+}
+
+// mat to vectors
+std::vector<std::vector<float>> mat2vec(Mat img)
+{
+    std::vector<std::vector<float>> out;
+    for (int i = 0; i < img.rows; i++)
+    {
+        std::vector<float> row;
+        for (int j = 0; j < img.cols; j++)
+        {
+            float val = ((int)img.at<uchar>(i, j))/255.0;
+            row.push_back(val);
+        }
+        out.push_back(row);
+    }
+    return out;
 }
 
 int main(int ac, char **av)
@@ -213,14 +281,16 @@ int main(int ac, char **av)
     //    Step 1 - Implementing Corner Detection
     //    Read the file
     Mat src_color, img1, img2; // To store the file after conversion
-    Mat src = imread("../data/frame10.png");
+    Mat src = imread("../data/race-001.png");
     cvtColor(src, img1, COLOR_BGR2GRAY);
-    src = imread("../data/frame11.png");
+    src = imread("../data/race-002.png");
     cvtColor(src, img2, COLOR_BGR2GRAY);
+
+    
 
     printf("Dimensions of the Image: %d, %d", src_color.cols, src_color.rows);
 
-    int xarea = 10, yarea = 10, thres = 8;
+    int xarea = 3, yarea = 3, thres = 1;
 
     //    Step 2 - Implementing Lucas-Kanade Tracker
     Mat previmg = img1, curimg;
@@ -228,21 +298,41 @@ int main(int ac, char **av)
     {
         char buffer[17];
 
+        const auto begin = chrono::steady_clock::now();
+
         // sprintf(buffer, "filename%.3d.jpg", i-1);
-        sprintf(buffer, "../data/frame1%d.png", i % 2);
+        sprintf(buffer, "../data/race-%03d.png", i);
         printf("\nLoaded %s for prev", buffer);
         src = imread(buffer);
         cvtColor(src, previmg, COLOR_BGR2GRAY);
+        auto previmgvec = mat2vec(previmg);
 
-        sprintf(buffer, "../data/frame1%d.png", (i + 1) % 2);
+        sprintf(buffer, "../data/race-%03d.png", (i + 1));
 
         printf("\nLoaded %s", buffer);
         src = imread(buffer);
         cvtColor(src, curimg, COLOR_BGR2GRAY);
+        auto curimgvec = mat2vec(curimg);
 
-        deque<Point> corn = findCorners(previmg, xarea, yarea, thres, false);
+        //check they have same sime
+        if (previmg.cols != curimg.cols || previmg.rows != curimg.rows)
+        {
+            printf("\nImages are not of the same size. Skipping");
+            continue;
+        }
 
-        lucasKanade(previmg, curimg, 3, 3, xarea, yarea, corn, true, buffer);
+        const auto endinit = chrono::steady_clock::now();
+
+        deque<Point> corn = findCorners(previmg, xarea, yarea, thres, true);
+
+        const auto endcorner = chrono::steady_clock::now();
+
+        lucasKanade(previmg, curimg, 40, 40, xarea, yarea, corn, false, buffer);
+
+        const auto endlk = chrono::steady_clock::now();
+        printf("\nInit took %d ms", chrono::duration_cast<chrono::milliseconds>(endinit - begin).count());
+        printf("\nCorner detection took %d ms", chrono::duration_cast<chrono::milliseconds>(endcorner - endinit).count());
+        printf("\nLucas-Kanade took %d ms", chrono::duration_cast<chrono::milliseconds>(endlk - endcorner).count());
     }
 
     // Next we try to implement Horn-Shunck
