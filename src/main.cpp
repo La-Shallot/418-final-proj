@@ -285,12 +285,15 @@ int main(int ac, char **av)
     cvtColor(src, img1, COLOR_BGR2GRAY);
     src = imread("../data/race-002.png");
     cvtColor(src, img2, COLOR_BGR2GRAY);
-
     
 
     printf("Dimensions of the Image: %d, %d", src_color.cols, src_color.rows);
 
     int xarea = 3, yarea = 3, thres = 1;
+
+    int sumCornerTime = 0;
+    int sumLKTime = 0;
+    int sumTotalTime = 0;
 
     //    Step 2 - Implementing Lucas-Kanade Tracker
     Mat previmg = img1, curimg;
@@ -333,7 +336,16 @@ int main(int ac, char **av)
         printf("\nInit took %d ms", chrono::duration_cast<chrono::milliseconds>(endinit - begin).count());
         printf("\nCorner detection took %d ms", chrono::duration_cast<chrono::milliseconds>(endcorner - endinit).count());
         printf("\nLucas-Kanade took %d ms", chrono::duration_cast<chrono::milliseconds>(endlk - endcorner).count());
+
+        sumCornerTime += chrono::duration_cast<chrono::milliseconds>(endcorner - endinit).count();
+        sumLKTime += chrono::duration_cast<chrono::milliseconds>(endlk - endcorner).count();
+        sumTotalTime += chrono::duration_cast<chrono::milliseconds>(endlk - begin).count();
+
     }
+
+    printf("\nAverage Corner Detection Time: %f", sumCornerTime / 30.0);
+    printf("\nAverage Lucas-Kanade Time: %f", sumLKTime / 30.0);
+    printf("\nAverage Total Time: %f", sumTotalTime / 30.0);
 
     // Next we try to implement Horn-Shunck
 }
