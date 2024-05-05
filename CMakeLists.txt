@@ -32,6 +32,8 @@ endif()
 
 set(${PROJECT_NAME}_SOURCES
     src/main.cpp
+    src/MorevacCorner.cpp
+    src/LkFlow.cpp
     # src/OpticalFlow.cpp
     # src/Image.cpp
     # src/GaussianBlur.cpp

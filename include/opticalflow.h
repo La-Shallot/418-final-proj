@@ -1,3 +1,0 @@
-#ifndef OPFLOW
-#define OPFLOW
-

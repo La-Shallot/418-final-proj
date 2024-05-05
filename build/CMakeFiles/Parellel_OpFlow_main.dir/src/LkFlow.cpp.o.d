@@ -1,5 +1,6 @@
-CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o: \
-  /home/la-shallot/418-final-proj/src/main.cpp \
+CMakeFiles/Parellel_OpFlow_main.dir/src/LkFlow.cpp.o: \
+  /home/la-shallot/418-final-proj/src/LkFlow.cpp \
+  /home/la-shallot/418-final-proj/include/lk_flow.h \
   /home/la-shallot/opencv-4.x/modules/imgcodecs/include/opencv2/imgcodecs.hpp \
   /home/la-shallot/opencv-4.x/modules/core/include/opencv2/core.hpp \
   /home/la-shallot/opencv-4.x/modules/core/include/opencv2/core/cvdef.h \
@@ -270,25 +271,11 @@ CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_lock.h \
   /home/la-shallot/opencv-4.x/modules/core/include/opencv2/core/optim.hpp \
   /home/la-shallot/opencv-4.x/modules/core/include/opencv2/core/ovx.hpp \
-  /home/la-shallot/opencv-4.x/modules/videoio/include/opencv2/videoio/videoio.hpp \
-  /home/la-shallot/opencv-4.x/modules/videoio/include/opencv2/videoio.hpp \
-  /home/la-shallot/opencv-4.x/modules/highgui/include/opencv2/highgui/highgui.hpp \
-  /home/la-shallot/opencv-4.x/modules/highgui/include/opencv2/highgui.hpp \
-  /home/la-shallot/opencv-4.x/modules/imgproc/include/opencv2/imgproc/imgproc.hpp \
-  /home/la-shallot/opencv-4.x/modules/imgproc/include/opencv2/imgproc.hpp \
-  /home/la-shallot/opencv-4.x/modules/imgproc/include/opencv2/./imgproc/segmentation.hpp \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/fstream \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/codecvt.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/fstream.tcc \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/math.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/deque \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_deque.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/deque.tcc \
-  /usr/lib/llvm-14/lib/clang/14.0.0/include/omp.h /usr/include/getopt.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_ext.h \
-  /home/la-shallot/418-final-proj/include/morevac_corner.h \
-  /home/la-shallot/418-final-proj/include/lk_flow.h
+  /home/la-shallot/opencv-4.x/modules/highgui/include/opencv2/highgui/highgui.hpp \
+  /home/la-shallot/opencv-4.x/modules/highgui/include/opencv2/highgui.hpp \
+  /home/la-shallot/opencv-4.x/modules/videoio/include/opencv2/videoio.hpp \
+  /home/la-shallot/opencv-4.x/modules/imgproc/include/opencv2/imgproc.hpp \
+  /home/la-shallot/opencv-4.x/modules/imgproc/include/opencv2/./imgproc/segmentation.hpp

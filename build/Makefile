@@ -142,6 +142,54 @@ test_openmp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/build
 .PHONY : test_openmp/fast
 
+src/LkFlow.o: src/LkFlow.cpp.o
+.PHONY : src/LkFlow.o
+
+# target to build an object file
+src/LkFlow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/LkFlow.cpp.o
+.PHONY : src/LkFlow.cpp.o
+
+src/LkFlow.i: src/LkFlow.cpp.i
+.PHONY : src/LkFlow.i
+
+# target to preprocess a source file
+src/LkFlow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/LkFlow.cpp.i
+.PHONY : src/LkFlow.cpp.i
+
+src/LkFlow.s: src/LkFlow.cpp.s
+.PHONY : src/LkFlow.s
+
+# target to generate assembly for a file
+src/LkFlow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/LkFlow.cpp.s
+.PHONY : src/LkFlow.cpp.s
+
+src/MorevacCorner.o: src/MorevacCorner.cpp.o
+.PHONY : src/MorevacCorner.o
+
+# target to build an object file
+src/MorevacCorner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.o
+.PHONY : src/MorevacCorner.cpp.o
+
+src/MorevacCorner.i: src/MorevacCorner.cpp.i
+.PHONY : src/MorevacCorner.i
+
+# target to preprocess a source file
+src/MorevacCorner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.i
+.PHONY : src/MorevacCorner.cpp.i
+
+src/MorevacCorner.s: src/MorevacCorner.cpp.s
+.PHONY : src/MorevacCorner.s
+
+# target to generate assembly for a file
+src/MorevacCorner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.s
+.PHONY : src/MorevacCorner.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -200,6 +248,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Parellel_OpFlow_main"
 	@echo "... test_openmp"
+	@echo "... src/LkFlow.o"
+	@echo "... src/LkFlow.i"
+	@echo "... src/LkFlow.s"
+	@echo "... src/MorevacCorner.o"
+	@echo "... src/MorevacCorner.i"
+	@echo "... src/MorevacCorner.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
