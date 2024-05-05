@@ -142,6 +142,30 @@ test_openmp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/build
 .PHONY : test_openmp/fast
 
+src/Harris.o: src/Harris.cpp.o
+.PHONY : src/Harris.o
+
+# target to build an object file
+src/Harris.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.o
+.PHONY : src/Harris.cpp.o
+
+src/Harris.i: src/Harris.cpp.i
+.PHONY : src/Harris.i
+
+# target to preprocess a source file
+src/Harris.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.i
+.PHONY : src/Harris.cpp.i
+
+src/Harris.s: src/Harris.cpp.s
+.PHONY : src/Harris.s
+
+# target to generate assembly for a file
+src/Harris.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.s
+.PHONY : src/Harris.cpp.s
+
 src/LkFlow.o: src/LkFlow.cpp.o
 .PHONY : src/LkFlow.o
 
@@ -248,6 +272,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Parellel_OpFlow_main"
 	@echo "... test_openmp"
+	@echo "... src/Harris.o"
+	@echo "... src/Harris.i"
+	@echo "... src/Harris.s"
 	@echo "... src/LkFlow.o"
 	@echo "... src/LkFlow.i"
 	@echo "... src/LkFlow.s"
