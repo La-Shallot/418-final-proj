@@ -992,7 +992,7 @@ CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.o: ../src/MorevacCorne
   /home/la-shallot/opencv-4.x/modules/imgproc/include/opencv2/imgproc.hpp \
   /home/la-shallot/opencv-4.x/modules/imgproc/include/opencv2/imgproc/segmentation.hpp
 
-CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o: ../src/main_test_all.cpp \
+CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o: ../src/main.cpp \
   /home/la-shallot/opencv-4.x/modules/imgcodecs/include/opencv2/imgcodecs.hpp \
   /home/la-shallot/opencv-4.x/modules/core/include/opencv2/core.hpp \
   /home/la-shallot/opencv-4.x/modules/core/include/opencv2/core/cvdef.h \
@@ -1299,8 +1299,7 @@ CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o: ../src/main_test_al
   /usr/include/x86_64-linux-gnu/bits/getopt_ext.h \
   ../include/morevac_corner.h \
   ../include/harris_corner.h \
-  ../include/lk_flow.h \
-  ../include/both_lk.h
+  ../include/lk_flow.h
 
 
 /usr/include/x86_64-linux-gnu/bits/getopt_ext.h:
@@ -1309,7 +1308,7 @@ CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o: ../src/main_test_al
 
 /usr/include/getopt.h:
 
-../src/main_test_all.cpp:
+../src/main.cpp:
 
 ../include/morevac_corner.h:
 

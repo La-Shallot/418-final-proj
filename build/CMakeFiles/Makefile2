@@ -64,7 +64,6 @@ CMAKE_BINARY_DIR = /home/la-shallot/418-final-proj/build
 
 # The main recursive "all" target.
 all: CMakeFiles/Parellel_OpFlow_main.dir/all
-all: CMakeFiles/test_openmp.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +72,6 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Parellel_OpFlow_main.dir/clean
-clean: CMakeFiles/test_openmp.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -101,32 +99,6 @@ Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/rule
 CMakeFiles/Parellel_OpFlow_main.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/clean
 .PHONY : CMakeFiles/Parellel_OpFlow_main.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_openmp.dir
-
-# All Build rule for target.
-CMakeFiles/test_openmp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/la-shallot/418-final-proj/build/CMakeFiles --progress-num=7,8 "Built target test_openmp"
-.PHONY : CMakeFiles/test_openmp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_openmp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/la-shallot/418-final-proj/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_openmp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/la-shallot/418-final-proj/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_openmp.dir/rule
-
-# Convenience name for target.
-test_openmp: CMakeFiles/test_openmp.dir/rule
-.PHONY : test_openmp
-
-# clean rule for target.
-CMakeFiles/test_openmp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/clean
-.PHONY : CMakeFiles/test_openmp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

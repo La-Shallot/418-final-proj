@@ -129,19 +129,6 @@ Parellel_OpFlow_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/build
 .PHONY : Parellel_OpFlow_main/fast
 
-#=============================================================================
-# Target rules for targets named test_openmp
-
-# Build rule for target.
-test_openmp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_openmp
-.PHONY : test_openmp
-
-# fast build rule for target.
-test_openmp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/build
-.PHONY : test_openmp/fast
-
 src/BothLk.o: src/BothLk.cpp.o
 .PHONY : src/BothLk.o
 
@@ -238,53 +225,29 @@ src/MorevacCorner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.s
 .PHONY : src/MorevacCorner.cpp.s
 
-src/main_test_all.o: src/main_test_all.cpp.o
-.PHONY : src/main_test_all.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/main_test_all.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o
-.PHONY : src/main_test_all.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/main_test_all.i: src/main_test_all.cpp.i
-.PHONY : src/main_test_all.i
-
-# target to preprocess a source file
-src/main_test_all.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.i
-.PHONY : src/main_test_all.cpp.i
-
-src/main_test_all.s: src/main_test_all.cpp.s
-.PHONY : src/main_test_all.s
-
-# target to generate assembly for a file
-src/main_test_all.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.s
-.PHONY : src/main_test_all.cpp.s
-
-src/test_openmp.o: src/test_openmp.cpp.o
-.PHONY : src/test_openmp.o
-
-# target to build an object file
-src/test_openmp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/src/test_openmp.cpp.o
-.PHONY : src/test_openmp.cpp.o
-
-src/test_openmp.i: src/test_openmp.cpp.i
-.PHONY : src/test_openmp.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/test_openmp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/src/test_openmp.cpp.i
-.PHONY : src/test_openmp.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/test_openmp.s: src/test_openmp.cpp.s
-.PHONY : src/test_openmp.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/test_openmp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/src/test_openmp.cpp.s
-.PHONY : src/test_openmp.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -295,7 +258,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Parellel_OpFlow_main"
-	@echo "... test_openmp"
 	@echo "... src/BothLk.o"
 	@echo "... src/BothLk.i"
 	@echo "... src/BothLk.s"
@@ -308,12 +270,9 @@ help:
 	@echo "... src/MorevacCorner.o"
 	@echo "... src/MorevacCorner.i"
 	@echo "... src/MorevacCorner.s"
-	@echo "... src/main_test_all.o"
-	@echo "... src/main_test_all.i"
-	@echo "... src/main_test_all.s"
-	@echo "... src/test_openmp.o"
-	@echo "... src/test_openmp.i"
-	@echo "... src/test_openmp.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
