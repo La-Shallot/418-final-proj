@@ -99,6 +99,12 @@ int main(int argc, char *argv[])
     for (int i = 1; i < 1 + num_frames; i += 1)
     {
         char buffer[50];
+        if (i % 2 == 0) {
+            omp_set_num_threads(16);
+        }
+        else {
+            omp_set_num_threads(1);
+        }
 
         const auto begin = chrono::steady_clock::now();
 
