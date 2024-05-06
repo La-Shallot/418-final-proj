@@ -69,19 +69,19 @@ include CMakeFiles/Parellel_OpFlow_main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Parellel_OpFlow_main.dir/flags.make
 
-CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o: CMakeFiles/Parellel_OpFlow_main.dir/flags.make
-CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o: ../src/main.cpp
-CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o: CMakeFiles/Parellel_OpFlow_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/la-shallot/418-final-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o -MF CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o.d -o CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o -c /home/la-shallot/418-final-proj/src/main.cpp
+CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o: CMakeFiles/Parellel_OpFlow_main.dir/flags.make
+CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o: ../src/main_test_all.cpp
+CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o: CMakeFiles/Parellel_OpFlow_main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/la-shallot/418-final-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o -MF CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o.d -o CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o -c /home/la-shallot/418-final-proj/src/main_test_all.cpp
 
-CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/la-shallot/418-final-proj/src/main.cpp > CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.i
+CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/la-shallot/418-final-proj/src/main_test_all.cpp > CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.i
 
-CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/la-shallot/418-final-proj/src/main.cpp -o CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.s
+CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/la-shallot/418-final-proj/src/main_test_all.cpp -o CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.s
 
 CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.o: CMakeFiles/Parellel_OpFlow_main.dir/flags.make
 CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.o: ../src/MorevacCorner.cpp
@@ -125,20 +125,36 @@ CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/la-shallot/418-final-proj/src/Harris.cpp -o CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.s
 
+CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o: CMakeFiles/Parellel_OpFlow_main.dir/flags.make
+CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o: ../src/BothLk.cpp
+CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o: CMakeFiles/Parellel_OpFlow_main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/la-shallot/418-final-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o -MF CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o.d -o CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o -c /home/la-shallot/418-final-proj/src/BothLk.cpp
+
+CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/la-shallot/418-final-proj/src/BothLk.cpp > CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.i
+
+CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/la-shallot/418-final-proj/src/BothLk.cpp -o CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.s
+
 # Object files for target Parellel_OpFlow_main
 Parellel_OpFlow_main_OBJECTS = \
-"CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o" \
+"CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o" \
 "CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.o" \
 "CMakeFiles/Parellel_OpFlow_main.dir/src/LkFlow.cpp.o" \
-"CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.o"
+"CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.o" \
+"CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o"
 
 # External object files for target Parellel_OpFlow_main
 Parellel_OpFlow_main_EXTERNAL_OBJECTS =
 
-Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o
+Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o
 Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/src/MorevacCorner.cpp.o
 Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/src/LkFlow.cpp.o
 Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.o
+Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o
 Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/build.make
 Parellel_OpFlow_main: /home/la-shallot/build/lib/libopencv_gapi.so.4.9.0
 Parellel_OpFlow_main: /home/la-shallot/build/lib/libopencv_highgui.so.4.9.0
@@ -156,7 +172,7 @@ Parellel_OpFlow_main: /home/la-shallot/build/lib/libopencv_flann.so.4.9.0
 Parellel_OpFlow_main: /home/la-shallot/build/lib/libopencv_imgproc.so.4.9.0
 Parellel_OpFlow_main: /home/la-shallot/build/lib/libopencv_core.so.4.9.0
 Parellel_OpFlow_main: CMakeFiles/Parellel_OpFlow_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/la-shallot/418-final-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Parellel_OpFlow_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/la-shallot/418-final-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Parellel_OpFlow_main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Parellel_OpFlow_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
