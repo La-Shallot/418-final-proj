@@ -1,5 +1,5 @@
-CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o: \
-  /home/la-shallot/418-final-proj/src/main.cpp \
+CMakeFiles/Parellel_OpFlow_main.dir/src/main_test_all.cpp.o: \
+  /home/la-shallot/418-final-proj/src/main_test_all.cpp \
   /home/la-shallot/opencv-4.x/modules/imgcodecs/include/opencv2/imgcodecs.hpp \
   /home/la-shallot/opencv-4.x/modules/core/include/opencv2/core.hpp \
   /home/la-shallot/opencv-4.x/modules/core/include/opencv2/core/cvdef.h \
@@ -292,4 +292,5 @@ CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/getopt_ext.h \
   /home/la-shallot/418-final-proj/include/morevac_corner.h \
   /home/la-shallot/418-final-proj/include/harris_corner.h \
-  /home/la-shallot/418-final-proj/include/lk_flow.h
+  /home/la-shallot/418-final-proj/include/lk_flow.h \
+  /home/la-shallot/418-final-proj/include/both_lk.h

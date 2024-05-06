@@ -129,18 +129,53 @@ Parellel_OpFlow_main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/build
 .PHONY : Parellel_OpFlow_main/fast
 
-#=============================================================================
-# Target rules for targets named test_openmp
+src/BothLk.o: src/BothLk.cpp.o
+.PHONY : src/BothLk.o
 
-# Build rule for target.
-test_openmp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_openmp
-.PHONY : test_openmp
+# target to build an object file
+src/BothLk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.o
+.PHONY : src/BothLk.cpp.o
 
-# fast build rule for target.
-test_openmp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/build
-.PHONY : test_openmp/fast
+src/BothLk.i: src/BothLk.cpp.i
+.PHONY : src/BothLk.i
+
+# target to preprocess a source file
+src/BothLk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.i
+.PHONY : src/BothLk.cpp.i
+
+src/BothLk.s: src/BothLk.cpp.s
+.PHONY : src/BothLk.s
+
+# target to generate assembly for a file
+src/BothLk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/BothLk.cpp.s
+.PHONY : src/BothLk.cpp.s
+
+src/Harris.o: src/Harris.cpp.o
+.PHONY : src/Harris.o
+
+# target to build an object file
+src/Harris.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.o
+.PHONY : src/Harris.cpp.o
+
+src/Harris.i: src/Harris.cpp.i
+.PHONY : src/Harris.i
+
+# target to preprocess a source file
+src/Harris.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.i
+.PHONY : src/Harris.cpp.i
+
+src/Harris.s: src/Harris.cpp.s
+.PHONY : src/Harris.s
+
+# target to generate assembly for a file
+src/Harris.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/Harris.cpp.s
+.PHONY : src/Harris.cpp.s
 
 src/LkFlow.o: src/LkFlow.cpp.o
 .PHONY : src/LkFlow.o
@@ -214,30 +249,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parellel_OpFlow_main.dir/build.make CMakeFiles/Parellel_OpFlow_main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/test_openmp.o: src/test_openmp.cpp.o
-.PHONY : src/test_openmp.o
-
-# target to build an object file
-src/test_openmp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/src/test_openmp.cpp.o
-.PHONY : src/test_openmp.cpp.o
-
-src/test_openmp.i: src/test_openmp.cpp.i
-.PHONY : src/test_openmp.i
-
-# target to preprocess a source file
-src/test_openmp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/src/test_openmp.cpp.i
-.PHONY : src/test_openmp.cpp.i
-
-src/test_openmp.s: src/test_openmp.cpp.s
-.PHONY : src/test_openmp.s
-
-# target to generate assembly for a file
-src/test_openmp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_openmp.dir/build.make CMakeFiles/test_openmp.dir/src/test_openmp.cpp.s
-.PHONY : src/test_openmp.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -247,7 +258,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Parellel_OpFlow_main"
-	@echo "... test_openmp"
+	@echo "... src/BothLk.o"
+	@echo "... src/BothLk.i"
+	@echo "... src/BothLk.s"
+	@echo "... src/Harris.o"
+	@echo "... src/Harris.i"
+	@echo "... src/Harris.s"
 	@echo "... src/LkFlow.o"
 	@echo "... src/LkFlow.i"
 	@echo "... src/LkFlow.s"
@@ -257,9 +273,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/test_openmp.o"
-	@echo "... src/test_openmp.i"
-	@echo "... src/test_openmp.s"
 .PHONY : help
 
 

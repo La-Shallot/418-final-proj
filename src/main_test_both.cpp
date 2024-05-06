@@ -13,12 +13,15 @@
 #include <morevac_corner.h>
 #include <harris_corner.h>
 #include <lk_flow.h>
-
+#include <both_lk.h>
+    
 using namespace cv;
 using namespace std;
 
+// mat to vectors
 std::vector<std::vector<float>> mat2vec(Mat img)
 {
+    // printf("\nMat size: %d, %d", img.cols, img.rows);
     std::vector<std::vector<float>> out;
     for (int y = 0; y < img.rows; y++)
     {
@@ -26,27 +29,26 @@ std::vector<std::vector<float>> mat2vec(Mat img)
         for (int x = 0; x < img.cols; x++)
         {
             float val = (float)((int)img.at<uchar>(y, x));
-            if (val < 0)
-            {
+            if (val < 0) {
                 printf("\nNegative value: %f", val);
             }
             col.push_back(val);
         }
         out.push_back(col);
     }
+    // printf("\nVector size: %d, %d", out.size(), out[0].size());
+    //print part of the vector
     return out;
 }
 
-int main(int argc, char *argv[])
-{
+
+int main(int argc, char *argv[]) {
 
     int num_threads = 1;
     int opt;
     char corner_detector = 'm';
-    while ((opt = getopt(argc, argv, "n:k:")) != -1)
-    {
-        switch (opt)
-        {
+    while ((opt = getopt(argc, argv, "n:k:")) != -1) {
+        switch (opt) {
             break;
         case 'n':
             num_threads = atoi(optarg);
@@ -61,9 +63,8 @@ int main(int argc, char *argv[])
 
     std::cout << "Number of threads: " << num_threads << "-----------------------------------------------------------------------\n";
     std::cout << "Corner Detector: " << corner_detector << "-----------------------------------------------------------------------\n";
-
-    if (num_threads > 0)
-    {
+    
+    if (num_threads > 0) {
         omp_set_num_threads(num_threads);
     }
 
@@ -88,25 +89,22 @@ int main(int argc, char *argv[])
     auto src_cur = imread(buffer1);
     auto src_prev = imread(buffer1);
 
-    printf("\nImg size: %d, %d", src_cur.cols, src_cur.rows);
-
     cvtColor(src_cur, curimg, COLOR_BGR2GRAY);
     cvtColor(src_prev, previmg, COLOR_BGR2GRAY);
     std::vector<std::vector<float>> curimgvec = mat2vec(previmg);
     std::vector<std::vector<float>> previmgvec;
 
     //    Step 2 - Implementing Lucas-Kanade Tracker
-    for (int i = 1; i < 1 + num_frames; i += 1)
+    for (int i = 1; i < 1 + num_frames; i++)
     {
         char buffer[50];
 
         const auto begin = chrono::steady_clock::now();
 
-        previmg = src_cur.clone();
+        src_prev = src_cur.clone();
         previmgvec = curimgvec;
 
         sprintf(buffer, "../data/race-%03d.png", (i + 1));
-
         src_cur = imread(buffer);
         cvtColor(src_cur, curimg, COLOR_BGR2GRAY);
         curimgvec = mat2vec(curimg);
@@ -114,50 +112,41 @@ int main(int argc, char *argv[])
         const auto endinit = chrono::steady_clock::now();
 
         // Compute Time :D
+        
+        auto lk_res = std::vector<std::pair<std::pair<int, int>, std::pair<float, float>>>();
 
-        vector<pair<int, int>> corn_vec;
-        if (corner_detector == 'm')
-        {
-            corn_vec = MorevacCorner::findCorners(previmgvec, xarea, yarea, thres_m, false);
-        }
-        else if (corner_detector == 'h')
-        {
-            corn_vec = HarrisCorner::findCorners(previmgvec, xarea, yarea, thres_h, false);
+        if (corner_detector == 'm') {
+            lk_res = BothLk::CalcMoreLkFlow(previmgvec, curimgvec, lk_xarea, lk_yarea, xarea, yarea, xarea, yarea, thres_m, false);
+        } else if (corner_detector == 'h') {
+            lk_res = BothLk::CalcHarrisLkFlow(previmgvec, curimgvec, lk_xarea, lk_yarea, xarea, yarea, xarea, yarea, thres_h, false);
         }
 
-        printf("\n>>>Found %d corners", corn_vec.size());
-        const auto endcorner = chrono::steady_clock::now();
-        auto lk_flow_res = Lk_Flow::CalcLkFlow(previmgvec, curimgvec, lk_xarea, lk_yarea, xarea, yarea, corn_vec, false);
         const auto endlk = chrono::steady_clock::now();
-
         // visual stuff
-        std::vector<Point> corn;
-        for (int i = 0; i < corn_vec.size(); i++)
-        {
-            corn.push_back(Point(corn_vec[i].first, corn_vec[i].second));
+
+        Mat visual_lk = src_prev.clone();
+        for (int i = 0; i < lk_res.size(); i++)
+        {   
+            auto corn = cv::Point(lk_res[i].first.first, lk_res[i].first.second);
+            auto vel = lk_res[i].second;
+            circle(visual_lk, corn, 2, Scalar(0, 255, 0, 0.3), 1);
+            line(visual_lk, corn, Point(corn.x + vel.first*5, corn.y + vel.second*5), Scalar(0, 255, 255), 1);
         }
 
-        Mat visual_lk = previmg.clone();
-        for (int i = 0; i < lk_flow_res.size(); i++)
-        {
-            circle(visual_lk, corn[i], 2, Scalar(0, 255, 0, 0.3), 1);
-            line(visual_lk, corn[i], Point(corn[i].x + lk_flow_res[i].first * 5, corn[i].y + lk_flow_res[i].second * 5), Scalar(0, 255, 255), 1);
-        }
-
-        namedWindow("lk", WINDOW_NORMAL);
-        setWindowProperty("lk", WND_PROP_FULLSCREEN, WINDOW_FULLSCREEN);
-        imshow("lk", visual_lk);
-        waitKey(0);
+        // namedWindow("lk", WINDOW_NORMAL);
+        // setWindowProperty("lk", WND_PROP_FULLSCREEN, WINDOW_FULLSCREEN);
+        // imshow("lk", visual_lk);
+        // waitKey(0);
 
         const auto endvisual = chrono::steady_clock::now();
-        printf("\n>>>Found %d corners", corn.size());
-        printf("\n>>>Init took %ld ms, Corner detection took %ld ms, Lucas-Kanade took %ld ms", chrono::duration_cast<chrono::milliseconds>(endinit - begin).count(), chrono::duration_cast<chrono::milliseconds>(endcorner - endinit).count(), chrono::duration_cast<chrono::milliseconds>(endlk - endcorner).count());
-        sumCornerTime += chrono::duration_cast<chrono::milliseconds>(endcorner - endinit).count();
-        sumLKTime += chrono::duration_cast<chrono::milliseconds>(endlk - endcorner).count();
+        printf("\n>>>Found %d corners", lk_res.size());
+        printf("\n>>>Lucas-Kanade time: %ld ms", chrono::duration_cast<chrono::milliseconds>(endlk - endinit).count());
+
+        sumLKTime += chrono::duration_cast<chrono::milliseconds>(endlk - endinit).count();
         sumTotalTime += chrono::duration_cast<chrono::milliseconds>(endlk - begin).count();
     }
 
-    printf("\nAverage Corner Detection Time: %f", sumCornerTime / ((float)num_frames));
+    // printf("\nAverage Corner Detection Time: %f", sumCornerTime / ((float)num_frames));
     printf("\nAverage Lucas-Kanade Time: %f", sumLKTime / ((float)num_frames));
     printf("\nAverage Total Time: %f", sumTotalTime / ((float)num_frames));
 }

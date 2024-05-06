@@ -1,5 +1,5 @@
-#ifndef _MCORNER_
-#define _MCORNER_
+#ifndef _HCORNER_
+#define _HCORNER_
 
 #include <deque>
 #include <opencv2/imgcodecs.hpp>
@@ -7,10 +7,9 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-class MorevacCorner {
+class HarrisCorner {
 public:
-    MorevacCorner();
-    static std::deque<cv::Point> findCorners(cv::Mat img, int xarea, int yarea, int thres, bool verbose, bool visual);
+    HarrisCorner();
     static std::vector<std::pair<int, int>> findCorners(std::vector<std::vector<float>>& img, int xarea, int yarea, int thres, bool verbose);
 };
 
