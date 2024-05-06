@@ -10,7 +10,7 @@ set(CFLAGS
 )
 
 add_compile_options(${CFLAGS})
-# NOTE: The below path is for CMU machines
+
 set(OpenCV_DIR /home/la-shallot/build/)
 find_package(OpenCV REQUIRED)
 
@@ -35,30 +35,9 @@ set(${PROJECT_NAME}_SOURCES
     src/MorevacCorner.cpp
     src/LkFlow.cpp
     src/Harris.cpp
-    # src/OpticalFlow.cpp
-    # src/Image.cpp
-    # src/GaussianBlur.cpp
-    # src/Keypoint.cpp
-    # src/LoG.cpp
-    # src/general_helpers.cpp
+    src/BothLk.cpp
 )
-
-# set(${PROJECT_NAME}_test_gaussian_blur_SOURCES
-#     src/test_gaussian_blur.cpp
-#     src/Image.cpp
-#     src/GaussianBlur.cpp
-#     src/Keypoint.cpp
-#     src/LoG.cpp
-#     src/general_helpers.cpp
-# )
 
 # Main
 add_executable(${PROJECT_NAME}_main ${${PROJECT_NAME}_SOURCES})
 target_link_libraries(${PROJECT_NAME}_main ${ALL_LIBS})
-
-# Test
-# add_executable(${PROJECT_NAME}_test_gaussian_blur ${${PROJECT_NAME}_test_gaussian_blur_SOURCES})
-# target_link_libraries(${PROJECT_NAME}_test_gaussian_blur ${ALL_LIBS})
-
-# Test OpenMP Compilation
-add_executable(test_openmp src/test_openmp.cpp)
